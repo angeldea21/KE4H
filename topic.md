@@ -7,10 +7,9 @@ title: Topic
 
 - 🏠 [Home](index.md)
 - 📖 **Topic**
-- ❓ [Research Questions](research.md)
 - ⚙️ [Methodology](methodology.md)
-- 🔍 [Knowledge Gap](knowledge-gap.md)
 - 💻 [SPARQL Queries](sparql.md)
+- 🔍 [Knowledge Gap](knowledge-gap.md)
 - 🤖 [LLM Comparison](llm-comparison.md)
 - ⚠️ [Challenges](challenges.md)
 - ✅ [Conclusion](conclusion.md)
@@ -51,6 +50,10 @@ The museum hosts two permanent collections:
 - Archaeological ceramics discovered during the restoration campaigns of the 1960s
 
 Visitors can explore towers, walkways, prisons, underground rooms and the keep while learning about the architectural evolution of the fortress from the Middle Ages to the Renaissance.
+
+![Rocca](assets/images/rocca_museum.jpg)
+
+_The museum inside the Rocca._
 
 ## Why was this monument selected?
 
