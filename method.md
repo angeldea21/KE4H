@@ -113,4 +113,4 @@ After that, we refined the proposed RDF triples so that they seamlessly integrat
 
 Developed the website using GitHub Pages to clearly present our work using .MD files and published under the Creative Commons Zero v1.0 Universal licence to be publicly avaible.
 
-<span style="display:block; width:100%; text-align:center; margin-top:50px; font-size:25px;">➡️ **Next:** [Methodology](sparql.md)</span>
+<span style="display:block; width:100%; text-align:center; margin-top:50px; font-size:25px;">➡️ **Next:** [SPARQL Queries](sparql.md)</span>
