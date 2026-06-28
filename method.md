@@ -16,7 +16,7 @@ title: Topic
 
 # Semantic Methodology
 
-The objective of this project is to identify semantic information that is missing from the ArCo Knowledge Graph regarding the **Rocca Sforzesca of Imola**.
+The objective of this project is to identify semantic information that is missing from the [ArCo Knowledge Graph](https://dati.beniculturali.it/arco/index.php) regarding the **[Rocca Sforzesca of Imola](https://it.wikipedia.org/wiki/Rocca_sforzesca_di_Imola)**.
 
 The adopted methodology combines Semantic Web technologies, SPARQL querying, authoritative cultural heritage sources and Large Language Models (LLMs) in order to analyse the existing knowledge graph and identify possible semantic enrichments.
 
@@ -70,9 +70,9 @@ Several SPARQL queries were executed to inspect both direct and indirect relatio
 
 The information contained in ArCo was compared with authoritative external sources, including:
 
-- Italian Ministry of Culture;
-- Imola Musei;
-- Comune di Imola;
+- [Italian Ministry of Culture](https://www.heritageresearch-hub.eu/member/italian-ministry-of-culture-ministero-della-cultura-mic/);
+- [Imola Musei](https://imolamusei.it/);
+- [Comune di Imola](https://www.comune.imola.bo.it/);
 - other institutional cultural heritage websites.
 
 Only official sources were considered in order to guarantee the reliability of the proposed knowledge enrichment.
@@ -111,6 +111,6 @@ After that, we refined the proposed RDF triples so that they seamlessly integrat
 
 ### Step 7 - Website development and publication with a licence under CC0
 
-Developed the website using GitHub Pages to clearly present our work using .MD files and published under the Creative Commons Zero v1.0 Universal licence to be publicly avaible.
+Developed the website using [GitHub](https://github.com) Pages to clearly present our work using .MD files and published under the **[Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.en)** licence to be publicly avaible.
 
 <span style="display:block; width:100%; text-align:center; margin-top:50px; font-size:25px;">➡️ **Next:** [SPARQL Queries](sparql.md)</span>
