@@ -1,123 +1,53 @@
 ---
 layout: default
+title: Rocca di Imola
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# KE4H - Rocca Sforzesca di Imola
 
-[Link to another page](./another-page.html).
+- 🏠 [Home](index.md)
+- 📖 [Topic](topic.md)
+- ❓ [Research Questions](research.md)
+- ⚙️ [Methodology](methodology.md)
+- 🔍 [Knowledge Gap](knowledge-gap.md)
+- 💻 [SPARQL Queries](sparql.md)
+- 🤖 [LLM Comparison](llm-comparison.md)
+- ⚠️ [Challenges](challenges.md)
+- ✅ [Conclusion](conclusion.md)
 
-There should be whitespace between paragraphs.
+## Abstract
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+This project was developed for the **Knowledge Engineering for the Humanities** course at the University of Bologna.
 
-# Header 1
+The objective of the project is to analyse the representation of the **[Rocca Sforzesca of Imola](https://it.wikipedia.org/wiki/Rocca_sforzesca_di_Imola)** within the **[ArCo Knowledge Graph](http://wit.istc.cnr.it/arco/)**, identify missing information (knowledge gaps), and propose possible semantic enrichments.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+The analysis combines Semantic Web technologies, SPARQL queries executed through the official [query endpoint](https://dati.cultura.gov.it/sparql), external authoritative cultural sources and Large Language Models (LLMs) to investigate the completeness of the available knowledge.
 
-## Header 2
+During the project two relevant knowledge gaps were identified:
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+- the lack of an explicit semantic connection between the Rocca and **Caterina Sforza**, one of the most important historical figures related to the fortress;
+- the absence of some current cultural functions documented by authoritative sources.
 
-### Header 3
+The project documents the complete methodology used to identify these gaps, evaluate the available data and propose possible extensions of the knowledge graph.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+## Objectives
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+The project aims to:
 
-#### Header 4
+- analyse the representation of the Rocca Sforzesca within ArCo;
+- explore the available RDF data through SPARQL;
+- compare the information contained in ArCo with authoritative external sources;
+- identify missing semantic relationships;
+- evaluate the contribution of Large Language Models during the knowledge engineering process.
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+## Resources
 
-##### Header 5
+The project mainly relies on:
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+- [ArCo Knowledge Graph](http://wit.istc.cnr.it/arco/)
+- [ArCo SPARQL Endpoint](https://dati.cultura.gov.it/sparql)
+- [ChatGPT](https://https://chatgpt.com)
+- [Gemini](https://gemini.google.com)
+- [GitHub](https://github.com)
 
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+➡️ **Next:** [Topic](topic.md)
