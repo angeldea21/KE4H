@@ -200,7 +200,7 @@ WHERE {
   }
 
 }
-ORDER BY ?property
+ORDER BY ASC ?property
 ```
 
 ![query 4](assets/images/q4-res.png)
@@ -208,6 +208,7 @@ ORDER BY ?property
 ### Keywords used:
 
 - OPTIONAL: Allows the inclusion of supplementary data (in this case, rdfs:label) if it exists, without excluding results where the image information is missing
+- ORDER BY ASC: sorts the output alphabetically according to the property URI
 
 ### Query results:
 
