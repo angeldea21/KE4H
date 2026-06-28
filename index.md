@@ -25,7 +25,7 @@ The analysis combines Semantic Web technologies, SPARQL queries executed through
 
 During the project two relevant knowledge gaps were identified:
 
-- the lack of an explicit semantic connection between the **Rocca** and **[Caterina Sforza]**(https://it.wikipedia.org/wiki/Caterina_Sforza), one of the most important historical figures related to the fortress;
+- the lack of an explicit semantic connection between the **Rocca** and **[Caterina Sforza](https://it.wikipedia.org/wiki/Caterina_Sforza)**, one of the most important historical figures related to the fortress;
 - the absence of some current cultural functions documented by authoritative sources.
 
 The project documents the complete methodology used to identify these gaps, evaluate the available data and propose possible extensions of the knowledge graph.
