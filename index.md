@@ -14,7 +14,7 @@ title: Rocca Sforzesca di Imola
 - ⚠️ [Challenges](challenges.md)
 - ✅ [Conclusion](conclusion.md)
 
-# KE4H - Rocca Sforzesca di Imola
+# KE4H - Analysis of the Rocca Sforzesca of Imola
 
 ## Abstract
 
