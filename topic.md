@@ -7,7 +7,7 @@ title: Topic
 
 - 🏠 [Home](index.md)
 - 📖 **Topic**
-- ⚙️ [Methodology](methodology.md)
+- ⚙️ [Methodology](method.md)
 - 💻 [SPARQL Queries](sparql.md)
 - 🔍 [Knowledge Gap](knowledge-gap.md)
 - 🤖 [LLM Comparison](llm-comparison.md)
