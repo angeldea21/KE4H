@@ -5,7 +5,7 @@ title: Rocca Sforzesca di Imola
 
 # KE4H - Rocca Sforzesca di Imola
 
-- 🏠 [Home](index.md)
+- 🏠 **Home**
 - 📖 [Topic](topic.md)
 - ❓ [Research Questions](research.md)
 - ⚙️ [Methodology](methodology.md)
