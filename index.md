@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rocca di Imola
+title: Rocca Sforzesca di Imola
 ---
 
 # KE4H - Rocca Sforzesca di Imola
@@ -50,4 +50,4 @@ The project mainly relies on:
 - [Gemini](https://gemini.google.com)
 - [GitHub](https://github.com)
 
-➡️ **Next:** [Topic](topic.md)
+<span style="display:block; width:100%; text-align:right; margin-top:50; font-size:25px;">➡️ **Next:** [Topic](topic.md)</span>
