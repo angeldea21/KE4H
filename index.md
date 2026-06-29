@@ -11,6 +11,7 @@ title: Rocca Sforzesca di Imola
 - 💻 [SPARQL Queries](sparql.md)
 - 🔍 [Knowledge Gap](knowledge-gap.md)
 - 🤖 [LLM Comparison](llm-comparison.md)
+- 🔗 [RDF Triples](rdf-triples.md)
 - ⚠️ [Challenges](challenges.md)
 - ✅ [Conclusion](conclusion.md)
 
