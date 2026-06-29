@@ -10,8 +10,8 @@ title: Conclusion
 - ⚙️ [Methodology](method.md)
 - 💻 [SPARQL Queries](sparql.md)
 - 🔍 [Knowledge Gap](knowledge-gap.md)
-- 🔗 [RDF Triple Generation](rdf.md)
 - 🤖 [LLM Comparison](llm-comparison.md)
+- 🔗 [RDF Triples](rdf-triples.md)
 - ⚠️ [Challenges](challenges.md)
 - ✅ **Conclusion**
 
