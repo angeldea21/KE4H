@@ -11,7 +11,7 @@ title: RDF Triple Generation
 - 💻 [SPARQL Queries](sparql.md)
 - 🔍 [Knowledge Gap](knowledge-gap.md)
 - 🤖 [LLM Comparison](llm-comparison.md)
-- 🧩 **RDF Triple Generation**
+- 🔗 **RDF Triple Generation**
 - ⚠️ [Challenges](challenges.md)
 - ✅ [Conclusion](conclusion.md)
 
