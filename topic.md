@@ -20,7 +20,7 @@ title: Topic
 
 ## Overview
 
-The **Rocca Sforzesca of Imola** is one of the best-preserved fortified buildings in Northern Italy and represents an important example of the transition between medieval military architecture and Renaissance fortification systems.
+The **[Rocca Sforzesca of Imola](https://it.wikipedia.org/wiki/Rocca_sforzesca_di_Imola)** is one of the best-preserved fortified buildings in Northern Italy and represents an important example of the transition between medieval military architecture and Renaissance fortification systems.
 
 Its origins date back to the **13th century**, when the Municipality of Imola commissioned the construction of a fortress to defend the city. During the following centuries the building underwent several transformations under the rule of different noble families, including the Alidosi, the Visconti, the Manfredi and finally the Sforza family. Between **1472 and 1484** the fortress was extensively redesigned in order to withstand the introduction of firearms, giving the Rocca the characteristic appearance that can still be appreciated today.
 
@@ -36,7 +36,7 @@ _Aereal view of the fortress._
 
 Throughout its history, the Rocca played both military and political roles.
 
-One of its most famous historical figures is **Caterina Sforza**, Lady of Imola and Forlì, who lived in the fortress together with her husband **[Girolamo Riario](https://it.wikipedia.org/wiki/Girolamo_Riario)**. During her rule the Rocca became the political centre of the city and symbolised the power of the Riario-Sforza family.
+One of its most famous historical figures is **[Caterina Sforza](https://it.wikipedia.org/wiki/Caterina_Sforza)**, Lady of [Imola](https://it.wikipedia.org/wiki/Imola) and [Forlì](https://it.wikipedia.org/wiki/Forl%C3%AC), who lived in the fortress together with her husband **[Girolamo Riario](https://it.wikipedia.org/wiki/Girolamo_Riario)**. During her rule the Rocca became the political centre of the city and symbolised the power of the Riario-Sforza family.
 
 Following the death of Pope Sixtus IV and the political instability that followed, the fortress was besieged by **[Cesare Borgia](https://it.wikipedia.org/wiki/Cesare_Borgia)** in 1499, marking the end of Caterina Sforza's dominion over Imola.
 
@@ -59,7 +59,7 @@ _The museum inside the Rocca._
 
 The Rocca Sforzesca represents an ideal case study for Knowledge Engineering because:
 
-- it is described within the ArCo Knowledge Graph;
+- it is described within the [ArCo Knowledge Graph](http://wit.istc.cnr.it/arco/);
 - it is extensively documented by authoritative cultural heritage sources;
 - it is strongly connected with important historical figures and cultural activities;
 
