@@ -20,7 +20,7 @@ After identifying the semantic gaps through SPARQL queries, Large Language Model
 
 Rather than accepting the first answer produced by the model, we experimented with different prompting techniques in order to improve the quality, precision and reliability of the generated information.
 
-For both ChatGPT and Gemini we tested the three prompting techniques required by the project:
+For both [ChatGPT](https://chatgpt.com) and [Gemini](https://gemini.google.com) we tested the three prompting techniques required by the project:
 
 - Zero-shot prompting
 - Few-shot prompting
@@ -32,11 +32,11 @@ Each answer was then manually compared with official historical sources and the 
 
 ### ❓ Zero-Shot Prompting
 
-We find that the response might as well be a yes or no, with little to no detail so we opted for a zero shot prompt, a technique that gives out quick answers without the need of examples.
+As a first experiment, we adopted a Zero-shot prompting strategy. Since the first identified gap concerns the current uses of the Rocca, we expected the models to answer using only their internal knowledge without any additional guidance or examples.
 
 The property a-cd:hasUse is associated with only the current cultural and historical usage of the building, so a LLM should have an easy task if the prompt is correctly written in terms of language and easy to understand in terms of tasks.
 
-The prompt we went with is:
+The prompt was intentionally simple:
 
 > Can the Rocca Sforzesca of Imola be considered an outdoor cinema?
 
@@ -48,15 +48,22 @@ The prompt we went with is:
 
 ![Gemini p1](assets/images/gmn-1.png)
 
-Both LLMs gave a short but detailed response in which we can actually se why the hasUse property might not be complete with a "cinema" or "outdoor cinema" option.
-While Gemini was more straight forward, we found that it also described how locals might feel about the Rocca, as not only a historical place but more of cultural and gathering place.
-We can find official resources about the problem in the ["Comune di Imola" official website - (https://www.culturaimola.it/festivals/rocca-cinema-imola-il-cinema-sotto-le-stelle)](https://www.culturaimola.it/festivals/rocca-cinema-imola-il-cinema-sotto-le-stelle)
+Both LLMs produced concise but informative answers, correctly recognising that the Rocca is also used as an outdoor cinema during the summer season.
+
+Gemini provided a slightly richer description by emphasising the role of the Rocca not only as a historical monument but also as a cultural meeting place for the local community.
+
+Both answers support the hypothesis that the current `a-cd:hasUse` information stored in ArCo is incomplete, since the recurring cinema activity is not represented in the knowledge graph.
+
+The information was verified using the official website of the ["Comune di Imola" official website - (https://www.culturaimola.it/festivals/rocca-cinema-imola-il-cinema-sotto-le-stelle)](https://www.culturaimola.it/festivals/rocca-cinema-imola-il-cinema-sotto-le-stelle).
 
 ## The second gap - Incorrect information about the authors and patrons
 
 ### ❓ Few Shots Technique
 
-We prefer the Few-shot Technique over the zero-shot prompt in this case because we define the question we want an answer to very misleading. We want to guide the LLM into a richer response by feeding it some guided examples. Before actually asking something about the Rocca of Imola, we went through some similiar subjects like:
+The second gap concerns the authorship of the Rocca, a much more complex historical issue.
+
+Unlike the previous experiment, we adopted a Few-shot prompting strategy by first providing the models with similar examples involving well-known Italian monuments. The goal was to guide the models towards the type of reasoning we expected before asking the actual question about the Rocca of Imola.
+Before actually asking something about the Rocca of Imola, we went through some similiar subjects like:
 
 > Who is the author of the colosseum?
 
@@ -74,9 +81,11 @@ and only then ask the final question about our subject.
 
 ![Gemini p2](assets/images/gmn-2.png)
 
-Both LLMs did not give out a satisfying answer to the question, further strengthening the problematics a property hasAuthor (and "pico:author") might have for complex buildings or objects of historical value. ChatGPT made expecially clear that Danesio Maineri could be considered both the "engineer reponsible for the first Sforza reconstruction" and "...the designer of the Sforza phase of the fortress".
+Both LLMs recognised that Danesio Maineri should not simply be considered the sole author of the Rocca, but rather the architect responsible for the Renaissance reconstruction commissioned during the Sforza period.
 
-The obtained results did not meet expectations, so we tried the last approach of prompting techniques.
+Although the responses were richer than those obtained with Zero-shot prompting, neither model clearly distinguished between the original medieval construction of the fortress and the later Renaissance intervention.
+
+This confirms that representing complex historical authorship through a single `hasAuthor` property may be semantically insufficient.
 
 ### ❓ Chain-of-Thought Technique
 
@@ -90,6 +99,24 @@ Chain-of-Thought (CoT) prompting encourages the model to explicitly articulate i
 
 ![Gemini p3](assets/images/gmn-3.png)
 
-At last, to better highlight the critical issues of the hasAuthor property we can see that ChatGPT failed to mention Danesio Maineri while Gemini went and gave a positive response even after considering the great [Leonardo da Vinci](https://it.wikipedia.org/wiki/Leonardo_da_Vinci) as a possible author. We can consider Gemini for both the Chain of thought and few shots techniques to have a better understanding and answering fr complex, guided answers.
+Chain-of-Thought prompting produced the most detailed answers.
 
-What we can deduce, is that we can certantly say who the author is, but more likely the one who commissioned the renovations and the author of the renovations itself, being Danesio Maineri for the first time.
+Both models explicitly analysed the historical development of the Rocca before identifying the role of each historical figure.
+
+ChatGPT correctly focused on the distinction between the original medieval fortress and the Renaissance reconstruction, although it omitted Danesio Maineri in its final summary.
+
+Gemini instead mentioned Danesio Maineri but also introduced additional historical figures, such as [Leonardo da Vinci](https://it.wikipedia.org/wiki/Leonardo_da_Vinci), whose connection with the Rocca is much weaker and potentially misleading.
+
+Overall, Chain-of-Thought prompting generated the richest explanations, but both models still required manual verification against authoritative historical sources.
+
+## Conclusions
+
+The experiments show that prompt engineering has a significant impact on the quality of the information generated by Large Language Models.
+
+- Zero-shot prompting produced quick and generally correct answers, but often lacked contextual detail.
+- Few-shot prompting improved the quality of the responses by guiding the models with similar examples, resulting in more focused and coherent explanations.
+- Chain-of-Thought prompting generated the most comprehensive reasoning, making it easier to identify semantic gaps and evaluate whether the generated knowledge could contribute to enriching the ArCo Knowledge Graph.
+
+Comparing the two language models, ChatGPT generally provided more cautious and historically grounded answers, whereas Gemini tended to produce richer and more detailed explanations. However, Gemini occasionally introduced historical associations that required additional verification.
+
+These experiments confirm that LLMs can effectively support Knowledge Engineering tasks, but their outputs should always be validated against authoritative sources and the ontology before being considered suitable for inclusion in a knowledge graph.
