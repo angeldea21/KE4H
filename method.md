@@ -11,6 +11,7 @@ title: Methodology
 - 💻 [SPARQL Queries](sparql.md)
 - 🔍 [Knowledge Gap](knowledge-gap.md)
 - 🤖 [LLM Comparison](llm-comparison.md)
+- 🔗 [RDF Triples](rdf-triples.md)
 - ⚠️ [Challenges](challenges.md)
 - ✅ [Conclusion](conclusion.md)
 
@@ -31,30 +32,30 @@ Selection of the cultural heritage asset
 Exploration of the ArCo Knowledge Graph
                 │
                 ▼
-SPARQL Queries
+          SPARQL Queries
                 │
                 ▼
-Analysis of available RDF triples
+  Analysis of available RDF triples
                 │
                 ▼
-Comparison with official sources
+   Comparison with official sources
                 │
                 ▼
-Knowledge Gap Identification
+     Knowledge Gap Identification
                 │
                 ▼
-Proposal of semantic enrichment
+   Proposal of semantic enrichment
 ```
 
 ### Step 1 - Selection of the Case Study
 
-The Rocca Sforzesca of Imola was selected because it is represented within the ArCo Knowledge Graph and is extensively documented by authoritative cultural heritage institutions.
+The Rocca Sforzesca of Imola was selected because it is represented within the [ArCo Knowledge Graph](http://wit.istc.cnr.it/arco/) and is extensively documented by authoritative cultural heritage institutions.
 
 This allows a direct comparison between the information represented in the knowledge graph and the information available from official sources.
 
 ### Step 2 - Exploration of the Knowledge Graph
 
-The ArCo SPARQL Endpoint was explored to understand how the Rocca is represented.
+The [ArCo SPARQL Endpoint](https://dati.cultura.gov.it/sparql) was explored to understand how the Rocca is represented.
 
 The analysis focused on:
 
