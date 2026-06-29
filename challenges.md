@@ -11,7 +11,7 @@ title: Challenges
 - 💻 [SPARQL Queries](sparql.md)
 - 🔍 [Knowledge Gap](knowledge-gap.md)
 - 🤖 [LLM Comparison](llm-comparison.md)
-- 🔗 [RDF Triple Generation](rdf-triples.md)
+- 🔗 [RDF Triple](rdf-triples.md)
 - ⚠️ **Challenges**
 - ✅ [Conclusion](conclusion.md)
 
