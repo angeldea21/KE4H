@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Conclusion
+title: Challenges
 ---
 
 ## Navigation
@@ -10,40 +10,89 @@ title: Conclusion
 - ⚙️ [Methodology](method.md)
 - 💻 [SPARQL Queries](sparql.md)
 - 🔍 [Knowledge Gap](knowledge-gap.md)
-- 🧩 [RDF Triple Generation](rdf.md)
+- 🔗 [RDF Triple Generation](rdf.md)
 - 🤖 [LLM Comparison](llm-comparison.md)
-- ⚠️ [Challenges](challenges.md)
-- ✅ **Conclusion**
+- ⚠️ **Challenges**
+- ✅ [Conclusion](conclusion.md)
 
-# Conclusion
+# Challenges
 
-![Rocca](assets/images/final1.jpg)
+Throughout the project we encountered several technical and semantic challenges while exploring the ArCo Knowledge Graph and designing meaningful enrichments.
 
-The aim of this project was to explore the ArCo Knowledge Graph, identify meaningful semantic gaps and investigate whether Large Language Models could assist in enriching cultural heritage knowledge.
+Rather than being isolated problems, these challenges often influenced one another and required multiple iterations of SPARQL exploration, ontology analysis and LLM-assisted reasoning.
 
-Starting from the **Rocca Sforzesca of Imola**, we progressively explored its RDF description through SPARQL queries, analysed the ArCo ontology and compared the available information with official historical sources.
+## Finding the correct cultural property
 
-This process led to the identification of two significant semantic gaps:
+The first challenge was identifying the correct entity corresponding to the **Rocca Sforzesca of Imola**.
 
-- the absence of the Rocca's current use as an **outdoor cinema**;
-- the incomplete historical representation of the fortress, where **Caterina Sforza** is entirely absent and **Danesio Maineri** is represented as the author of the monument without distinguishing his role in the Renaissance reconstruction.
+Simple keyword searches such as _"Rocca di Imola"_ did not immediately return the expected resource because ArCo adopts official cataloguing labels rather than common names.
 
-Once the gaps had been validated, Large Language Models were employed to generate candidate RDF triples capable of enriching the knowledge graph.
+We therefore refined our SPARQL queries by combining multiple `FILTER` and `REGEX` clauses until the correct ArchitecturalOrLandscapeHeritage entity was identified.
 
-The experiments showed that LLMs are particularly effective when the ontology already contains suitable classes and properties, as demonstrated by the cinema use case. In contrast, the historical authorship scenario highlighted the limits of the current ontology, showing that some forms of knowledge cannot be represented correctly without extending the existing vocabulary.
+## Understanding the ArCo ontology
 
-Another important outcome of the project concerns the role of human supervision. Although ChatGPT and Gemini generated coherent RDF proposals, none of the generated knowledge could be accepted without manual validation against authoritative historical documentation and the ArCo ontology itself.
+Once the Rocca entity had been found, understanding its RDF description proved considerably more difficult than expected.
 
-Overall, this project demonstrates that Knowledge Graph enrichment is a collaborative process involving SPARQL exploration, ontology analysis, historical verification and LLM-assisted knowledge generation. Rather than replacing the work of knowledge engineers, Large Language Models proved to be valuable assistants capable of accelerating the enrichment process while still requiring expert validation.
+ArCo is composed of several interconnected ontologies, including:
 
-Future work could extend this methodology to other cultural heritage entities contained in ArCo, enriching the graph with additional historical relationships, cultural uses and semantic connections that are currently absent from the knowledge base.
+- Context Description
+- Cultural Event
+- Denotative Description
+- Location
+- Construction Description
+- Catalogue
 
-# Final Remarks
+Consequently, identifying the correct property to query often required exploring the ontology documentation before writing the final SPARQL queries.
 
-The integration of Knowledge Graphs and Large Language Models represents a promising direction for the future of Digital Humanities.
+## Distinguishing missing data from modelling choices
 
-By combining structured semantic data with the reasoning capabilities of modern language models, it becomes possible not only to discover missing knowledge, but also to propose meaningful enrichments that preserve historical consistency and semantic interoperability.
+One of the most challenging aspects of the project was determining whether an apparent "gap" actually corresponded to missing information or was simply the result of ArCo's modelling decisions.
 
-Our case study on the Rocca Sforzesca of Imola illustrates how this hybrid approach can support the continuous evolution of cultural heritage knowledge graphs while maintaining the high quality standards required by the Semantic Web community.
+For example, the Rocca is currently described as a museum and an outdoor theatre, but its documented use as an outdoor cinema during the **Arena Cinema** festival is absent.
 
-![Thanks](assets/images/thanks.jpg)
+Similarly, the graph associates Danesio Maineri with the Rocca but contains no explicit reference to Caterina Sforza.
+
+These observations required consulting external historical sources before concluding that genuine semantic gaps existed.
+
+## Generating RDF with existing ontologies
+
+The RDF generation phase highlighted another important challenge.
+
+For the outdoor cinema use case, existing ArCo classes and properties were sufficient to describe the missing knowledge.
+
+However, representing the historical role of Caterina Sforza proved much more complex.
+
+No existing property adequately distinguishes:
+
+- the original construction of the fortress;
+- later architectural interventions;
+- historical patrons or commissioners.
+
+As a consequence, generating correct RDF required proposing an ontology extension instead of simply creating additional triples.
+
+## Evaluating LLM-generated knowledge
+
+Large Language Models produced coherent RDF suggestions, but their outputs could not be accepted without verification.
+
+Each generated triple had to be manually compared against:
+
+- the ArCo ontology;
+- the existing knowledge graph;
+- official historical documentation.
+
+This validation phase was essential to avoid introducing historically incorrect or semantically inconsistent knowledge into the graph.
+
+## Lessons learned
+
+This project demonstrated that enriching a cultural heritage knowledge graph involves much more than generating RDF triples.
+
+A successful enrichment requires:
+
+- understanding the ontology;
+- exploring the existing graph through SPARQL;
+- validating historical information using authoritative sources;
+- critically evaluating the output of Large Language Models.
+
+The combination of these activities ultimately allowed us to identify meaningful semantic gaps and propose realistic enrichments for the ArCo Knowledge Graph.
+
+<span style="display:block; width:100%; text-align:center; margin-top:50px; font-size:25px;">➡️ **Next:** [Conclusion](conclusion.md)</span>
