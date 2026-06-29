@@ -11,12 +11,13 @@ title: SPARQL Queries
 - 💻 **SPARQL Queries**
 - 🔍 [Knowledge Gap](knowledge-gap.md)
 - 🤖 [LLM Comparison](llm-comparison.md)
+- 🔗 [RDF Triples](rdf-triples.md)
 - ⚠️ [Challenges](challenges.md)
 - ✅ [Conclusion](conclusion.md)
 
 # SPARQL Queries
 
-The ArCo Knowledge Graph was explored through a series of SPARQL queries executed on the official endpoint.
+The [ArCo Knowledge Graph](http://wit.istc.cnr.it/arco/) was explored through a series of SPARQL queries executed on the official endpoint.
 
 The purpose of these queries was to understand how the **Rocca Sforzesca of Imola** is represented and to identify missing semantic information.
 
@@ -220,7 +221,7 @@ This information is already not correct, as the author of the Rocca is not corre
 
 After all the queries that we have highlighted, we can draw several key conclusions:
 
-- [Rocca Sforzesca of Dozza](https://dati.cultura.gov.it/lodview-arco/resource/ArchitecturalOrLandscapeHeritage/0800242914.html) exists as a distinct entity within the ontology. Some of the resources we found might not be truthful or 100% correct.
+- [Rocca Sforzesca of Imola](https://dati.cultura.gov.it/lodview-arco/resource/ArchitecturalOrLandscapeHeritage/0800242914.html) exists as a distinct entity within the ontology. Some of the resources we found might not be truthful or 100% correct.
 - There are no signs of relevant historical figures (agents) that contributed to the Rocca of Imola and that are key properites that might need to be adjusted.
 
 <span style="display:block; width:100%; text-align:center; margin-top:50px; font-size:25px;">➡️ **Next:** [Knowledge Gap](knowledge-gap.md)</span>
