@@ -11,6 +11,7 @@ title: LLM Comparison
 - 💻 [SPARQL Queries](sparql.md)
 - 🔍 [Knowledge Gap](knowledge-gap.md)
 - 🤖 **LLM Comparison**
+- 🔗 [RDF Triples](rdf-triples.md)
 - ⚠️ [Challenges](challenges.md)
 - ✅ [Conclusion](conclusion.md)
 
@@ -120,3 +121,5 @@ The experiments show that prompt engineering has a significant impact on the qua
 Comparing the two language models, ChatGPT generally provided more cautious and historically grounded answers, whereas Gemini tended to produce richer and more detailed explanations. However, Gemini occasionally introduced historical associations that required additional verification.
 
 These experiments confirm that LLMs can effectively support Knowledge Engineering tasks, but their outputs should always be validated against authoritative sources and the ontology before being considered suitable for inclusion in a knowledge graph.
+
+<span style="display:block; width:100%; text-align:center; margin-top:50px; font-size:25px;">➡️ **Next:** [RDF Triples](rdf-triples.md)</span>
