@@ -202,6 +202,4 @@ These observations demonstrate that the ArCo Knowledge Graph already provides an
 
 Such missing information could be integrated through new RDF triples, improving the semantic completeness of the knowledge graph and enabling richer historical and cultural queries.
 
----
-
 <span style="display:block; width:100%; text-align:center; margin-top:50px; font-size:25px;">➡️ **Next:** [LLM Comparison](llm-comparison.md)</span>
