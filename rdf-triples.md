@@ -135,7 +135,6 @@ _The prompt answer_
 
 ### **Gemini**
 
-![RDF Gemini 2.1](assets/images/rdf-2-gemini-1-1.png)
 ![RDF Gemini 2.1](assets/images/rdf-2-gemini-1-2.png)
 ![RDF Gemini 2.1](assets/images/rdf-2-gemini-1-3.png)
 ![RDF Gemini 2.1](assets/images/rdf-2-gemini-1-4.png)
