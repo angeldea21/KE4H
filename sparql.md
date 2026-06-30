@@ -44,7 +44,7 @@ but the results where somewhat dissapointing.
 
 ![query1.0](assets/images/q1-pre.png)
 
-We then switched to a more open query in which we not onlyu searched for Rocca elements but we added a second distinct filter for Imola:
+We then switched to a more open query in which we not only searched for Rocca elements but we added a second distinct filter for Imola:
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
