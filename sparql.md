@@ -175,7 +175,7 @@ _[Rocca di Imola (disegno) by Magistretti Giuseppe (sec. XIX) - https://dati.cul
 
 ### Query results:
 
-The only two records returned are the same drawing of the Rocca from the 14th century, in which we can only depict the similarities of the building with today. In the inverse relatios we can find that the Rocca is referenced so we will continue our research through the queries.
+The only two records returned are the same drawing of the Rocca from the 19th century, in which we can only depict the similarities of the building with today. In the inverse relatios we can find that the Rocca is referenced so we will continue our research through the queries.
 
 ![query3 result 2](assets/images/q3-res2.png)
 
@@ -213,9 +213,7 @@ ORDER BY ASC ?property
 
 ### Query results:
 
-Besides the author of the building, [Danesio Maineri](https://it.wikipedia.org/wiki/Danese_Maineri) only institutional agents and cataloguing authorities were found.
-No historical person such as **Caterina Sforza** is directly represented.
-This information is already not correct, as the author of the Rocca is not correlated to Danesio Maineri but only to the renovations made during the Sforza reign.
+Besides the author of the building ([Danesio Maineri](https://it.wikipedia.org/wiki/Danese_Maineri)), only institutional agents and cataloguing authorities were found by this query. No historical people such as Caterina Sforza is directly represented in the Rocca Sforzesca graph. This may indicate that the information contained in the class is not entirely accurate, given that Danesio can only be considered the author of the renovation work but not the author of the fortress.
 
 ## Research conclusion
 
