@@ -52,4 +52,7 @@ The project mainly relies on:
 - [Gemini](https://gemini.google.com)
 - [GitHub](https://github.com)
 
+## Authors
+Marchetti Angelica - Monti Ardea - Zini Alice
+
 <span style="display:block; width:100%; text-align:center; margin-top:50px; font-size:25px;">➡️ **Next:** [Topic](topic.md)</span>
